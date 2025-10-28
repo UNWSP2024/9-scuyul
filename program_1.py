@@ -4,11 +4,12 @@
 # Write a program that displays the number of names that are stored in the file.
 
 def count_file_lines():
-    ######################
-    # Add your code here #
-    ######################
-    print('In the count_file_lines function')
+        with open("names.txt", "r") as file:
+            lines = file.readlines()
+            numLines = len(lines)
 
+        print('In the count_file_lines function')
+        print(f"There are {numLines} names.")
 
 
 # You don't need to change anything below this line:
